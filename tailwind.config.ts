@@ -14,6 +14,23 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'bay-leaf': {
+        '50': '#f2f7f3',
+        '100': '#e0ebe0',
+        '200': '#c3d7c6',
+        '300': '#9abba0',
+        '400': '#84a98c',
+        '500': '#4d7c58',
+        '600': '#3a6145',
+        '700': '#2e4e38',
+        '800': '#263f2e',
+        '900': '#203427',
+        '950': '#111d15',
+      },      
+    }
   },
   plugins: [],
 }
