@@ -1,22 +1,20 @@
-import Link from "next/link";
+'use client'
+import HeaderLink from '@/components/HeaderLink'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
-	return (
-		<div className="flex justify-center">
-			<div className="flex justify-center m-6 py-0 px-2 w-min rounded-full bg-bay-leaf-100">
-				<div className="text-black m-4 no-underline bg-transparent hover:underline">
-					<Link href="/about">About</Link>
-				</div>
-				<div className="text-black m-4 no-underline bg-transparent hover:underline">
-					<Link href="/projects">Projects</Link>
-				</div>
-				<div className="text-black m-4 no-underline bg-transparent hover:underline">
-					<Link href="/blog">Blog</Link>
-				</div>
-				<div className="text-black m-4 no-underline bg-transparent hover:underline">
-					<Link href="/contact">Contact</Link>
-				</div>
-			</div>
-		</div>
-	);
+  const pathname = usePathname()
+  return (
+    <div className="flex p-4 sticky top-0">
+      <div className="flex-grow flex justify-center">
+        <div className="flex h-full justify-center w-min rounded-full bg-bay-leaf-100 backdrop-blur-sm">
+          <HeaderLink displayText="About" path="/about" first></HeaderLink>
+          <HeaderLink displayText="Projects" path="/projects"></HeaderLink>
+          <HeaderLink displayText="Blog" path="/blog"></HeaderLink>
+          <HeaderLink displayText="Contact" path="/contact" last></HeaderLink>
+        </div>
+      </div>
+    </div>
+  )
 }

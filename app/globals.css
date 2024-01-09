@@ -8,7 +8,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-attachment: fixed;
-  background: linear-gradient(theme(colors.bay-leaf.400), theme(colors.bay-leaf.500));
+  background: linear-gradient(theme(colors.bay-leaf.400), theme(colors.bay-leaf.500)); */
 }

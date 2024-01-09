@@ -1,25 +1,28 @@
 export default function Projects() {
-	return (
-		<main>
-			<div className="flex justify-center">
-				<div className="flex flex-wrap justify-center -mb-4 -mx-2">
-					<div className="w-1/3 mb-4 px-2">
-						<div className="h-12 bg-indigo-200">1</div>
-					</div>
-					<div className="w-1/3 mb-4 px-2">
-						<div className="h-12 bg-indigo-300">2</div>
-					</div>
-					<div className="w-1/3 mb-4 px-2">
-						<div className="h-12 bg-indigo-200">3</div>
-					</div>
-					<div className="w-1/3 mb-4 px-2">
-						<div className="h-12 bg-indigo-300">4</div>
-					</div>
-					<div className="w-1/3 mb-4 px-2">
-						<div className="h-12 bg-indigo-200">5</div>
-					</div>
-				</div>
-			</div>
-		</main>
-	);
+  return (
+    <main>
+      <div className="justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex-wrap content-start m-24 gap-12">
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>a</div>
+          </div>
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>a</div>
+          </div>
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>b</div>
+          </div>
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>b</div>
+          </div>
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>c</div>
+          </div>
+          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+            <div>c</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
 }
