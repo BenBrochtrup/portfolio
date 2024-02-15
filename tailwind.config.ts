@@ -11,6 +11,20 @@ const config: Config = {
       backgroundImage: {
         'gradient': 'linear-gradient(180deg, #84a98c 0%, #4d7c58 100%)',
       },
+      keyframes: {
+        fadeUp: {
+          '0%': { transform: 'translateY(50%)', opacity: '0' },
+          '100%': { transform: 'translateY(0%)', opacity: '1'},
+        },
+        fadeDown: {
+          '0%': { transform: 'translateY(0%)', opacity: '1' },
+          '100%': { transform: 'translateY(50%)', opacity: '0'},
+        },
+      },
+      animation: {
+        fadeUp: 'fadeUp 0.5s',
+        fadeDown: 'fadeDown 0.5s forwards'
+      }
     },
     colors: {
       transparent: 'transparent',

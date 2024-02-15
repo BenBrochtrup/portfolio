@@ -1,3 +1,6 @@
+import GalleryImage from '@/components/GalleryImage'
+import Image from 'next/image'
+
 export default function About() {
   return (
     <main>
@@ -5,7 +8,15 @@ export default function About() {
         <h1 className="text-8xl text-center font-normal">Hi, I'm Ben</h1>
         <div className="flex">
           <div className="w-1/2">
-            <h1>INSERT PIC HERE</h1>
+            <div className="relative w-96 h-96">
+              <div className="absolute rounded-t-3xl top-0 left-0 w-full h-full bg-bay-leaf-500"></div>
+              {/* Example color for abstract shape */}
+              <img
+                src="/assets/images/transparent_headshot.png"
+                alt="Headshot"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 transition-transform duration-300 ease-out hover:scale-105"
+              />
+            </div>
           </div>
           <div className="w-1/2">
             <h2 className="text-4xl text-right">
@@ -60,6 +71,11 @@ export default function About() {
             </p>
           </div>
         </div>
+        <GalleryImage
+          src="/assets/images/lauterbrunnen.jpeg"
+          alt="Waterfall"
+          location="Lauterbrunnen, Switzerland"
+        />
       </div>
     </main>
   )

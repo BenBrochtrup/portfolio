@@ -5,7 +5,7 @@ import SpotifyRecent from '@/components/SpotifyRecent'
 
 export default function Footer() {
   return (
-    <div>
+    <div className="bg-bay-leaf-900 py-4">
       <div className="flex p-4 justify-center">
         <div className="w-1/2 flex justify-center">
           <LinkWithIcon
