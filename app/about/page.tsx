@@ -71,11 +71,20 @@ export default function About() {
             </p>
           </div>
         </div>
-        <GalleryImage
-          src="/assets/images/lauterbrunnen.jpeg"
-          alt="Waterfall"
-          location="Lauterbrunnen, Switzerland"
-        />
+        <div
+          className="flex gap-6"
+        >
+          <GalleryImage
+            src="/assets/images/lauterbrunnen.jpeg"
+            alt="Waterfall"
+            location="Lauterbrunnen, Switzerland"
+          />
+          <GalleryImage
+            src="/assets/images/lauterbrunnen.jpeg"
+            alt="Waterfall"
+            location="Lauterbrunnen, Switzerland"
+          />
+        </div>
       </div>
     </main>
   )
