@@ -12,10 +12,12 @@ interface SpotifyRecent {
 
 const SpotifyRecent: FC<SpotifyRecent> = ({ song, album, artist, link }) => {
   return (
-    <div className="flex rounded-full bg-bay-leaf-50 w-1/4">
-      <FaSpotify className="w-12" />
+    <div className="flex rounded-full bg-bay-leaf-50">
       <div>
-        <div>On repeat</div>
+        <FaSpotify className="w-12" />
+      </div>
+      <div>
+        <div>Listening to lately</div>
         <a href={link} target="_blank" rel="noopener noreferrer">
           {song} by {artist}
         </a>

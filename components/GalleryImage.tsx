@@ -28,7 +28,7 @@ const GalleryImage: React.FC<GalleryImageProps> = ({ src, alt, location }) => {
       <img
         src={src}
         alt={alt}
-        className="block h-auto rounded-xl overflow-hidden"
+        className="block w-auto rounded-xl overflow-hidden"
       />
       {isHovered ? (
         <div className="absolute bottom-2 left-2 bg-bay-leaf-600 text-bay-leaf-100 py-1 px-2 rounded-md animate-fadeUp">
