@@ -19,19 +19,17 @@ const DynamicIcon: FC<DynamicIcon> = ({ id }) => {
 }
 
 interface LinkWithIcon {
-  displayText: string
   link: string
   icon: string
 }
 
-const LinkWithIcon: FC<LinkWithIcon> = ({ displayText, link, icon }) => {
+const LinkWithIcon: FC<LinkWithIcon> = ({ link, icon }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="w-min flex hover:bg-bay-leaf-400 bg-transparent p-2 align-middle items-center rounded-lg">
-        <div className="pr-2">
+      <div className="w-min hover:bg-bay-leaf-400 bg-transparent p-2 inline-block align-middle items-center rounded-lg">
+        <div>
           <DynamicIcon id={icon} />
         </div>
-        <div>{displayText}</div>
       </div>
     </a>
   )
