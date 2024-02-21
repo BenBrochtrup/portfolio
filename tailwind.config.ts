@@ -19,14 +19,15 @@ const config: Config = {
     extend: {
       textColor: {
         skin: {
-          'base': `${withOpacity('--color-text-base')}`,
-          'muted': `${withOpacity('--color-text-muted')}`,
-          'inverted': `${withOpacity('--color-text-inverted')}`,
+          'base': withOpacity('--color-text-base'),
+          'muted': withOpacity('--color-text-muted'),
+          'inverted': withOpacity('--color-text-inverted'),
         }
       },
       backgroundColor: {
         skin: {
           'fill': withOpacity('--color-fill'),
+          'fill-accent': withOpacity('--color-fill-accent'),
           'button-accent': withOpacity('--color-button-accent'),
           'button-accent-hover': withOpacity('--color-button-accent-hover'),
           'button-muted': withOpacity('--color-button-muted')

@@ -10,7 +10,7 @@ interface FooterLink {
 const FooterLink: FC<FooterLink> = ({ text, link }) => {
   return (
     <a href={link}>
-      <div className="w-min hover:bg-skin-button-accent bg-transparent p-2 inline-block align-middle items-center rounded-lg">
+      <div className="w-min hover:bg-skin-button-accent-hover p-2 inline-block align-middle items-center rounded-lg">
         {text}
       </div>
     </a>

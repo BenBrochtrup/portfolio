@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // className="bg-gradient-to-b from-bay-leaf-200 to-bay-leaf-300"
+      className="bg-gradient-to-b from-bay-leaf-200 to-bay-leaf-300"
     >
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen bg-skin-fill">
+        <div className="flex flex-col min-h-screen">
           <Header />
           <div className="mb-auto">{children}</div>
           <Footer />
