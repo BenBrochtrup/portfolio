@@ -1,5 +1,14 @@
 import type { Config } from 'tailwindcss'
 
+function withOpacity(variableName: string): string {
+  return ({ opacityValue }: { opacityValue: number | undefined }): string => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +17,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        skin: {
+          'base': `${withOpacity('--color-text-base')}`,
+          'muted': `${withOpacity('--color-text-muted')}`,
+          'inverted': `${withOpacity('--color-text-inverted')}`,
+        }
+      },
+      backgroundColor: {
+        skin: {
+          'fill': withOpacity('--color-fill'),
+          'button-accent': withOpacity('--color-button-accent'),
+          'button-accent-hover': withOpacity('--color-button-accent-hover'),
+          'button-muted': withOpacity('--color-button-muted')
+        }
+      },
+      gradientColorStops: {
+        skin: {
+          hue: withOpacity('--color-fill'),
+        },
+      },
       backgroundImage: {
         'gradient': 'linear-gradient(180deg, #84a98c 0%, #4d7c58 100%)',
       },
@@ -24,7 +53,7 @@ const config: Config = {
       animation: {
         fadeUp: 'fadeUp 0.5s',
         fadeDown: 'fadeDown 0.5s forwards'
-      }
+      },
     },
     colors: {
       transparent: 'transparent',
@@ -41,7 +70,7 @@ const config: Config = {
         '800': '#263f2e',
         '900': '#203427',
         '950': '#111d15',
-      },      
+      },
     }
   },
   plugins: [],
