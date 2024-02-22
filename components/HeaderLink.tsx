@@ -22,16 +22,10 @@ const HeaderLink: FC<HeaderLinkProps> = ({
 
   return (
     <Link href={path}>
-      <div
-        className={`h-full p-4 hover:bg-bay-leaf-200 ${
-          first ? 'hover:rounded-l-full' : 'rounded-none'
-        } ${last ? 'hover:rounded-r-full' : 'rounded-none'}`}
-      >
+      <div className="w-min text-skin-inverted hover:bg-skin-button-accent-hover p-2 inline-block align-middle items-center rounded-lg">
         <div
-          className={`text-bay-leaf-950 ${
+          className={`${
             pathname === url.pathname ? 'underline' : 'no-underline'
-          } ${first ? 'rounded-l-full pl-2' : 'rounded-none'} ${
-            last ? 'rounded-r-full pr-2' : 'rounded-none'
           }`}
         >
           {displayText}

@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex">
           <div className="w-1/2">
             <div className="relative w-96 h-96">
-              <div className="absolute rounded-t-3xl top-0 left-0 w-full h-full bg-bay-leaf-500"></div>
+              <div className="absolute rounded-t-3xl top-0 left-0 w-full h-full bg-skin-fill-accent"></div>
               {/* Example color for abstract shape */}
               <img
                 src="/assets/images/transparent_headshot.png"

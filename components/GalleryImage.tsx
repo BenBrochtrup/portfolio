@@ -31,11 +31,11 @@ const GalleryImage: React.FC<GalleryImageProps> = ({ src, alt, location }) => {
         className="block w-auto rounded-xl overflow-hidden"
       />
       {isHovered ? (
-        <div className="absolute bottom-2 left-2 bg-bay-leaf-600 text-bay-leaf-100 py-1 px-2 rounded-md animate-fadeUp">
+        <div className="absolute bottom-2 left-2 bg-skin-fill-accent text-skin-base py-1 px-2 rounded-md animate-fadeUp">
           {location}
         </div>
       ) : (
-        <div className="absolute bottom-2 left-2 bg-bay-leaf-600 text-bay-leaf-100 py-1 px-2 rounded-md animate-fadeDown">
+        <div className="absolute bottom-2 left-2 bg-skin-fill-accent text-skin-base py-1 px-2 rounded-md animate-fadeDown">
           {location}
         </div>
       )}
