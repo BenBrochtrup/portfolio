@@ -22,22 +22,22 @@ export default function Projects() {
               </div>
             )
           })} */}
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>a</div>
           </div>
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>a</div>
           </div>
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>b</div>
           </div>
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>b</div>
           </div>
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>c</div>
           </div>
-          <div className="w-full h-80 mb-4 bg-bay-leaf-600">
+          <div className="w-full h-80 mb-4 bg-skin-fill-accent">
             <div>c</div>
           </div>
         </div>

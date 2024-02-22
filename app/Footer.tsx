@@ -16,10 +16,10 @@ export default function Footer() {
         />
       </div>
       <div className="w-1/3 flex items-center justify-center gap-2">
-        <FooterLink text="About" link="/about" />
+        {/* <FooterLink text="About" link="/about" />
         <FooterLink text="Projects" link="/projects" />
         <FooterLink text="Contact" link="/contact" />
-        <FooterLink text="Blog" link="/blog" />
+        <FooterLink text="Blog" link="/blog" /> */}
       </div>
       <div className="w-1/3 flex items-center justify-center">
         <LinkWithIcon link="https://github.com/BenBrochtrup" icon="FaGithub" />

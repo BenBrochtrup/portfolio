@@ -12,7 +12,7 @@ interface SpotifyRecent {
 
 const SpotifyRecent: FC<SpotifyRecent> = ({ song, album, artist, link }) => {
   return (
-    <div className="flex rounded-full bg-bay-leaf-50">
+    <div className="flex rounded-full bg-skin-button-accent-hover">
       <div>
         <FaSpotify className="w-12" />
       </div>

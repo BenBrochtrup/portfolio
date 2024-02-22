@@ -26,7 +26,7 @@ interface LinkWithIcon {
 const LinkWithIcon: FC<LinkWithIcon> = ({ link, icon }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="w-min hover:bg-bay-leaf-400 bg-transparent p-2 inline-block align-middle items-center rounded-lg">
+      <div className="w-min hover:bg-skin-button-accent-hover p-2 inline-block align-middle items-center rounded-lg">
         <div>
           <DynamicIcon id={icon} />
         </div>
