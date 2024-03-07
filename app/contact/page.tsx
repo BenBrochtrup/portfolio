@@ -1,3 +1,7 @@
+import Equalizer from "@/components/Equalizer";
+
 export default function Projects() {
-  return <main></main>
+  return <main>
+    <Equalizer/>
+  </main>
 }

@@ -2,6 +2,7 @@
 
 import { FC } from 'react'
 import { FaSpotify } from 'react-icons/fa'
+import Equalizer from './Equalizer'
 
 interface SpotifyRecent {
   song: string
@@ -21,6 +22,9 @@ const SpotifyRecent: FC<SpotifyRecent> = ({ song, album, artist, link }) => {
         <a href={link} target="_blank" rel="noopener noreferrer">
           {song} by {artist}
         </a>
+      </div>
+      <div>
+        <Equalizer/>
       </div>
     </div>
   )

@@ -50,10 +50,19 @@ const config: Config = {
           '0%': { transform: 'translateY(0%)', opacity: '1' },
           '100%': { transform: 'translateY(50%)', opacity: '0'},
         },
+        equalize: {
+          '0%': { height: '0%' },
+          '20%': { height: '12%' },
+          '40%': { height: '38%' },
+          '60%': { height: '63%' },
+          '80%': { height: '25%' },
+          '100%': { height: '10%' },
+        }
       },
       animation: {
         fadeUp: 'fadeUp 0.5s',
-        fadeDown: 'fadeDown 0.5s forwards'
+        fadeDown: 'fadeDown 0.5s forwards',
+        equalize: 'equalize 1.0s linear infinite'
       },
     },
     colors: {
