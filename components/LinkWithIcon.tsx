@@ -1,21 +1,15 @@
 'use client'
 
 import { FC } from 'react'
-import * as Icons from 'react-icons/fa'
+import Image from 'next/image'
 
 interface DynamicIcon {
-  id: string
+  name: string
 }
 
-const DynamicIcon: FC<DynamicIcon> = ({ id }) => {
-  const IconComponent = Icons[id]
-
-  // Return external link icon if none found
-  if (!IconComponent) {
-    return <Icons.FaExternalLinkAlt />
-  }
-
-  return <IconComponent />
+const DynamicIcon: FC<DynamicIcon> = ({ name }) => {
+  const icons = require.context('../public/assets/icons', true)
+  return <Image src={icons(`./${name}.svg`)} width={75} alt={`${name} icon`}/>
 }
 
 interface LinkWithIcon {
@@ -26,9 +20,9 @@ interface LinkWithIcon {
 const LinkWithIcon: FC<LinkWithIcon> = ({ link, icon }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="w-min hover:bg-skin-button-accent-hover p-2 inline-block align-middle items-center rounded-lg">
+      <div className="w-12 hover:bg-skin-button-accent-hover p-2 inline-block align-middle items-center rounded-lg">
         <div>
-          <DynamicIcon id={icon} />
+          <DynamicIcon name={icon} />
         </div>
       </div>
     </a>
