@@ -51,12 +51,12 @@ const config: Config = {
           '100%': { transform: 'translateY(50%)', opacity: '0'},
         },
         equalize: {
-          '0%': { height: '0%' },
-          '20%': { height: '12%' },
-          '40%': { height: '38%' },
-          '60%': { height: '63%' },
-          '80%': { height: '25%' },
-          '100%': { height: '10%' },
+          '0%': { height: '20%' },
+          '20%': { height: '32%' },
+          '40%': { height: '45%' },
+          '60%': { height: '75%' },
+          '80%': { height: '50%' },
+          '100%': { height: '20%' },
         }
       },
       animation: {
