@@ -57,12 +57,23 @@ const config: Config = {
           '60%': { height: '75%' },
           '80%': { height: '50%' },
           '100%': { height: '20%' },
+        },
+        slideIn: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(-50px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0)',
+          }
         }
       },
       animation: {
         fadeUp: 'fadeUp 0.5s',
         fadeDown: 'fadeDown 0.5s forwards',
-        equalize: 'equalize 1.0s linear infinite'
+        equalize: 'equalize 1.0s linear infinite',
+        slideIn: 'slideIn 750ms ease var(--delay, 0) forwards'
       },
     },
     colors: {
