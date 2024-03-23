@@ -50,6 +50,10 @@ const config: Config = {
           '0%': { transform: 'translateY(0%)', opacity: '1' },
           '100%': { transform: 'translateY(50%)', opacity: '0'},
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1'},
+        },
         equalize: {
           '0%': { height: '20%' },
           '20%': { height: '32%' },
@@ -72,6 +76,7 @@ const config: Config = {
       animation: {
         fadeUp: 'fadeUp 0.5s',
         fadeDown: 'fadeDown 0.5s forwards',
+        fadeIn: 'fadeIn 0.5s forwards',
         equalize: 'equalize 1.0s linear infinite',
         slideIn: 'slideIn 750ms ease var(--delay, 0) forwards'
       },
