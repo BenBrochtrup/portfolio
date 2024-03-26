@@ -67,10 +67,7 @@ export default function Blog() {
 
   return (
     <main>
-      <Hero
-        title="Blog"
-        subtitle="Updates on what I have been working on lately"
-      />
+      <Hero title="Blog" subtitle="Learnings and thoughts from recent work" />
       <div className="w-full">
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-1 content-start gap-6 px-4">
