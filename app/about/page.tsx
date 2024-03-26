@@ -21,7 +21,7 @@ export default function About() {
           <div className="w-1/2">
             <Hero
               title="Hi, I'm Ben"
-              subtitle="I'm a software engineer working mostly remote from [chilly]
+              subtitle="I'm a software engineer from [chilly]
               Minneapolis, Minnesota."
             />
           </div>
