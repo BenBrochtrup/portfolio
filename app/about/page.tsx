@@ -1,13 +1,13 @@
 import GalleryImage from '@/components/GalleryImage'
+import Hero from '@/components/Hero'
 import Image from 'next/image'
 
 export default function About() {
   return (
     <main>
-      <div className="justify-center p-4">
-        <h1 className="text-8xl text-center font-normal">Hi, I'm Ben</h1>
-        <div className="flex">
-          <div className="w-1/2">
+      <div className="m-4">
+        <div className="flex justify-center">
+          <div>
             <div className="relative w-96 h-96">
               <div className="absolute rounded-t-3xl top-0 left-0 w-full h-full bg-skin-fill-accent"></div>
               {/* Example color for abstract shape */}
@@ -19,10 +19,11 @@ export default function About() {
             </div>
           </div>
           <div className="w-1/2">
-            <h2 className="text-4xl text-right">
-              I'm a software engineer working mostly remote from [chilly]
-              Minneapolis, Minnesota.
-            </h2>
+            <Hero
+              title="Hi, I'm Ben"
+              subtitle="I'm a software engineer from [chilly]
+              Minneapolis, Minnesota."
+            />
           </div>
         </div>
         <div className="grid place-items-center">
@@ -71,9 +72,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div
-          className="flex gap-6"
-        >
+        <div className="flex gap-6">
           <GalleryImage
             src="/assets/images/lauterbrunnen.jpeg"
             alt="Waterfall"

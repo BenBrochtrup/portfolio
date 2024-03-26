@@ -34,10 +34,10 @@ export default function Header() {
                 : 'flex h-full w-min rounded-full bg-opacity-50 backdrop-filter backdrop-blur-md gap-6 my-2 px-2 items-center bg-bay-leaf-50'
             }
           >
-            <HeaderLink displayText="About" path="/about"></HeaderLink>
-            <HeaderLink displayText="Projects" path="/projects"></HeaderLink>
-            <HeaderLink displayText="Blog" path="/blog"></HeaderLink>
-            <HeaderLink displayText="Contact" path="/contact"></HeaderLink>
+            <HeaderLink displayText="About" path="/about" />
+            <HeaderLink displayText="Projects" path="/projects" />
+            <HeaderLink displayText="Blog" path="/blog" />
+            <HeaderLink displayText="Contact" path="/contact" />
           </div>
         </div>
       </div>
