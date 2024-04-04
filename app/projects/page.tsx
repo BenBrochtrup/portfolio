@@ -87,7 +87,7 @@ export default function Projects() {
             return (
               <Post
                 key={index}
-                id={index}
+                id={index.toString()}
                 tag={p.tag}
                 title={p.title}
                 delay={index * 150}
