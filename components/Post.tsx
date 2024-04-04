@@ -21,12 +21,14 @@ const Post: React.FC<PostProps> = ({ id, tag, title, delay }) => {
     setIsHovered(false)
   }
 
+  const style = { '--delay': delay + 'ms' } as React.CSSProperties
+
   return (
     <div
       className="inline-block relative overflow-hidden animate-slideIn opacity-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ '--delay': delay + 'ms' }}
+      style={style}
     >
       <div
         key={id}

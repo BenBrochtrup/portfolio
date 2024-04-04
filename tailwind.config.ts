@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 function withOpacity(variableName: string): string {
+  //@ts-ignore
   return ({ opacityValue }: { opacityValue: number | undefined }): string => {
     if (opacityValue !== undefined) {
       return `rgba(var(${variableName}), ${opacityValue})`;
