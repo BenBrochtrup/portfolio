@@ -3,9 +3,7 @@ import Header from './Header'
 export default function Home() {
   return (
     <main>
-      <div className="flex">
-        <Header />
-      </div>
+      <div className="flex"></div>
     </main>
   )
 }

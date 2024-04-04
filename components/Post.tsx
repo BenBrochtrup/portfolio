@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import LinkWithIcon from './LinkWithIcon'
+import Image from 'next/image'
+import SpotifyIcon from '../public/assets/icons/spotify.svg'
 
 interface PostProps {
   id: string
@@ -42,7 +43,7 @@ const Post: React.FC<PostProps> = ({ id, tag, title, delay }) => {
         </div>
         <div className="flex-grow"></div>
         <div className="flex items-center">
-          <LinkWithIcon link="https://github.com/BenBrochtrup" icon="github" />
+          <Image width={75} src={SpotifyIcon} alt="Spotify icon" />
         </div>
       </div>
     </div>
