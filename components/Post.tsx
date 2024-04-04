@@ -22,12 +22,14 @@ const Post: React.FC<PostProps> = ({ id, tag, title, delay }) => {
     setIsHovered(false)
   }
 
+  const style = { '--delay': delay + 'ms' } as React.CSSProperties
+
   return (
     <div
       className="inline-block relative overflow-hidden animate-slideIn opacity-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ '--delay': delay + 'ms' }}
+      style={style}
     >
       <div
         key={id}
@@ -41,7 +43,7 @@ const Post: React.FC<PostProps> = ({ id, tag, title, delay }) => {
         </div>
         <div className="flex-grow"></div>
         <div className="flex items-center">
-          <Image width={75} src={SpotifyIcon} />
+          <Image width={75} src={SpotifyIcon} alt="Spotify icon" />
         </div>
       </div>
     </div>
